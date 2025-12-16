@@ -70,9 +70,9 @@ extension SwiftNEW {
                 if align == .trailing {
                     Spacer()
                 }
-                Text(String(localized: "Return", bundle: .module))
+                Text(String(localized: "Back", bundle: .module))
                     .bold()
-                Image(systemName: "arrow.down.circle.fill")
+                Image(systemName: "arrowshape.turn.up.backward.circle.fill")
                 if align == .leading {
                     Spacer()
                 }
