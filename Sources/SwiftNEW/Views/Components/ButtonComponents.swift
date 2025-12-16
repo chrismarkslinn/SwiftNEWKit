@@ -41,7 +41,7 @@ extension SwiftNEW {
                 if align == .trailing {
                     Spacer()
                 }
-                Text(String(localized: "Continue", bundle: .module))
+                Text(String(localized: "Dismiss", bundle: .module))
                     .bold()
                 Image(systemName: "arrow.right.circle.fill")
                 if align == .leading {
