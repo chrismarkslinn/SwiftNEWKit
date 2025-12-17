@@ -82,7 +82,7 @@ extension SwiftNEW {
                                     }
                                 }
                                 .padding(.bottom)
-                                .background(Color.white)
+                                .frame(width: 400)
                             }
                         }
                     }
