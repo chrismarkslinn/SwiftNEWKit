@@ -24,11 +24,11 @@ extension SwiftNEW {
                 if align == .center {
                     AppIconView()
                 }
-                Text(String(localized: "What's New in", bundle: .module))
-                    .bold().font(.largeTitle)
+                Text(String(localized: "What's new in", bundle: .module))
+                    .bold().font(.title)
                 //Text("\(String(localized: "Version", bundle: .module)) \(Bundle.versionBuild)")
                 Text("\(String(localized: "Version", bundle: .module)) \(Bundle.version)")
-                    .bold().font(.title).foregroundColor(.secondary)
+                    .bold().font(.headline).foregroundColor(.secondary)
             }
             if align == .trailing {
                 AppIconView()
