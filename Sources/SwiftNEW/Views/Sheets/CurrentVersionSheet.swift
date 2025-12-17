@@ -14,7 +14,7 @@ extension SwiftNEW {
     
     // MARK: - Current Version Changes View
     public var sheetCurrent: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: align) {
             Spacer()
             
             headings
@@ -49,9 +49,9 @@ extension SwiftNEW {
                                         .cornerRadius(15)
                                         .padding(.trailing)
                                     } else {
-                                        if (new.icon != "") {
+                                        //if (new.icon != "") {
                                             Spacer()
-                                        }
+                                        //}
                                     }
                                     
                                     VStack(alignment: align == .trailing ? .trailing : .leading) {
@@ -76,9 +76,9 @@ extension SwiftNEW {
                                         .cornerRadius(15)
                                         .padding(.trailing)
                                     } else {
-                                        if (new.icon != "") {
+                                        //if (new.icon != "") {
                                             Spacer()
-                                        }
+                                        //}
                                     }
                                 }
                                 .padding(.bottom)
