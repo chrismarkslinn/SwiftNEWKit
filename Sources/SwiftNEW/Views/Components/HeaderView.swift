@@ -26,7 +26,8 @@ extension SwiftNEW {
                 }
                 Text(String(localized: "What's New in", bundle: .module))
                     .bold().font(.largeTitle)
-                Text("\(String(localized: "Version", bundle: .module)) \(Bundle.versionBuild)")
+                //Text("\(String(localized: "Version", bundle: .module)) \(Bundle.versionBuild)")
+                Text("\(String(localized: "Version", bundle: .module))")
                     .bold().font(.title).foregroundColor(.secondary)
             }
             if align == .trailing {
