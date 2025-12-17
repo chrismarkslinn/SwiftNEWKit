@@ -35,7 +35,7 @@ extension SwiftNEW {
                         if item.version == Bundle.version || item.subVersion == Bundle.version {
                             ForEach(item.new, id: \.self) { new in
                                 HStack {
-                                    if align == .leading || align == .center {
+                                    if (new.icon != "" && (align == .leading || align == .center)) {
                                         ZStack {
                                             color
                                             Image(systemName: new.icon)
