@@ -59,7 +59,7 @@ extension SwiftNEW {
                                         if (new.subtitle != "") {
                                             Text(new.subtitle).font(.subheadline).foregroundColor(.secondary).lineLimit(1)
                                         }
-                                        Text(new.body).font(.caption).foregroundColor(.secondary).lineLimit(4)
+                                        Text(new.body).font(.callout).foregroundColor(.secondary).lineLimit(4)
                                     }
                                     
                                     if (new.icon != "" && align == .trailing) {
