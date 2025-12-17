@@ -15,14 +15,15 @@ extension SwiftNEW {
     #if os(iOS)
     public var headings: some View {
         HStack {
+            /*
             if align == .leading {
                 AppIconView()
                     .padding(.leading, -8)
                     .padding(.trailing, 8)
-            }
+            }*/
             VStack(alignment: align) {
                 if align == .center {
-                    AppIconView()
+                    //AppIconView()
                 }
                 Text(String(localized: "What's new in", bundle: .module))
                     .bold().font(.title)
@@ -31,7 +32,7 @@ extension SwiftNEW {
                     .bold().font(.headline).foregroundColor(.secondary)
             }
             if align == .trailing {
-                AppIconView()
+                //AppIconView()
             }
         }
     }
