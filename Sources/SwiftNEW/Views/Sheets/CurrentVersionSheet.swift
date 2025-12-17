@@ -80,7 +80,9 @@ extension SwiftNEW {
                                             Spacer()
                                         }
                                     }
-                                }.padding(.bottom)
+                                }
+                                .padding(.bottom)
+                                .background(Color.white)
                             }
                         }
                     }
