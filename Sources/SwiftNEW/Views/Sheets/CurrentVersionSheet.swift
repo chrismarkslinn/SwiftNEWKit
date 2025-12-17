@@ -49,16 +49,20 @@ extension SwiftNEW {
                                         .cornerRadius(15)
                                         .padding(.trailing)
                                     } else {
-                                        Spacer()
+                                        if (new.icon != "") {
+                                            Spacer()
+                                        }
                                     }
                                     
                                     VStack(alignment: align == .trailing ? .trailing : .leading) {
                                         Text(new.title).font(.headline).lineLimit(1)
-                                        Text(new.subtitle).font(.subheadline).foregroundColor(.secondary).lineLimit(1)
-                                        Text(new.body).font(.caption).foregroundColor(.secondary).lineLimit(2)
+                                        if (new.subtitle != "") {
+                                            Text(new.subtitle).font(.subheadline).foregroundColor(.secondary).lineLimit(1)
+                                        }
+                                        Text(new.body).font(.caption).foregroundColor(.secondary).lineLimit(4)
                                     }
                                     
-                                    if align == .trailing {
+                                    if (new.icon != "" && align == .trailing) {
                                         ZStack {
                                             color
                                             Image(systemName: new.icon)
@@ -72,7 +76,9 @@ extension SwiftNEW {
                                         .cornerRadius(15)
                                         .padding(.trailing)
                                     } else {
-                                        Spacer()
+                                        if (new.icon != "") {
+                                            Spacer()
+                                        }
                                     }
                                 }.padding(.bottom)
                             }
