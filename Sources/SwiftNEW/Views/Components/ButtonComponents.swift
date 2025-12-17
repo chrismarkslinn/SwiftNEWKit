@@ -25,7 +25,7 @@ extension SwiftNEW {
                 if align == .leading {
                     Spacer()
                 }
-            }.font(.caption)
+            }.font(.callout)
         }
         #if !os(visionOS)
         .buttonStyle(.bordered)
