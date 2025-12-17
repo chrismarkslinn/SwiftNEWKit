@@ -86,7 +86,7 @@ extension SwiftNEW {
                     }
                 }
                 #if !os(tvOS)
-                .frame(width: 300)
+                .frame(width: 400)
                 #elseif !os(macOS)
                 .frame(maxHeight: UIScreen.main.bounds.height * 0.5)
                 #endif
