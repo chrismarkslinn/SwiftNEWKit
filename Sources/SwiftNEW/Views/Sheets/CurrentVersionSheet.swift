@@ -55,11 +55,11 @@ extension SwiftNEW {
                                     }
                                     
                                     VStack(alignment: align == .trailing ? .trailing : .leading) {
-                                        Text(new.title).font(.headline).lineLimit(1)
+                                        Text(new.title).font(.headline).lineLimit(2)
                                         if (new.subtitle != "") {
-                                            Text(new.subtitle).font(.subheadline).foregroundColor(.secondary).lineLimit(1)
+                                            Text(new.subtitle).font(.subheadline).foregroundColor(.secondary).lineLimit(2)
                                         }
-                                        Text(new.body).font(.callout).foregroundColor(.secondary).lineLimit(4)
+                                        Text(new.body).font(.callout).foregroundColor(.secondary).lineLimit(6)
                                     }
                                     
                                     if (new.icon != "" && align == .trailing) {
