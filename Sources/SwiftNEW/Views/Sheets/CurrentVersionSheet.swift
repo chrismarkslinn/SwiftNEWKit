@@ -49,9 +49,9 @@ extension SwiftNEW {
                                         .cornerRadius(15)
                                         .padding(.trailing)
                                     } else {
-                                        //if (new.icon != "") {
+                                        if (align == .trailing) {
                                             Spacer()
-                                        //}
+                                        }
                                     }
                                     
                                     VStack(alignment: align == .trailing ? .trailing : .leading) {
@@ -76,9 +76,9 @@ extension SwiftNEW {
                                         .cornerRadius(15)
                                         .padding(.trailing)
                                     } else {
-                                        //if (new.icon != "") {
+                                        if (new.icon != "" || align == .center) {
                                             Spacer()
-                                        //}
+                                        }
                                     }
                                 }
                                 .padding(.bottom)
