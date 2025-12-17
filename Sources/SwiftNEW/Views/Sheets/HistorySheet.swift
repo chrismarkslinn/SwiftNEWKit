@@ -34,13 +34,14 @@ extension SwiftNEW {
                     .padding(.bottom)
                     
                     ForEach(item.new, id: \.self) { new in
-                        //HStack {
+                        HStack {
                             VStack(alignment: align == .trailing ? .trailing : .leading) {
                                 Text(new.title).font(.headline).lineLimit(2)
                                 Text(new.subtitle).font(.subheadline).foregroundColor(.secondary).lineLimit(2)
                                 Text(new.body).font(.callout).foregroundColor(.secondary).lineLimit(6)
-                            }.padding(.bottom).frame(width: 450)
-                        //}.padding(.bottom).frame(width: 450)
+                            }
+                            Spacer()
+                        }.padding(.bottom).frame(width: 450)
                     }
                 }
             }
