@@ -14,7 +14,7 @@ extension SwiftNEW {
     
     // MARK: - Current Version Changes View
     public var sheetCurrent: some View {
-        VStack(alignment: align) {
+        VStack(alignment: .leading) {
             Spacer()
             
             headings
