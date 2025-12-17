@@ -26,7 +26,10 @@ extension SwiftNEW {
                     //AppIconView()
                 }
                 Text(String(localized: "What's new in", bundle: .module))
-                    .bold().font(.title)
+                    .bold()
+                    .font(.title)
+                    .padding(.top, 10)
+                
                 //Text("\(String(localized: "Version", bundle: .module)) \(Bundle.versionBuild)")
                 Text("\(String(localized: "Version", bundle: .module)) \(Bundle.version)")
                     .bold().font(.headline).foregroundColor(.secondary)
