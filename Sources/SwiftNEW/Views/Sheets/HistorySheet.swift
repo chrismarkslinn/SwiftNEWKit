@@ -34,52 +34,18 @@ extension SwiftNEW {
                     .padding(.bottom)
                     
                     ForEach(item.new, id: \.self) { new in
-                        HStack {
-                            if align == .leading || align == .center {
-                                ZStack {
-                                    color
-                                    Image(systemName: new.icon)
-                                        .foregroundColor(.white)
-                                }.glass(radius: 15, shadowColor: color)
-                                #if !os(tvOS)
-                                .frame(width: 50, height: 50)
-                                #else
-                                .frame(width: 100, height: 100)
-                                #endif
-                                .cornerRadius(15)
-                                .padding(.trailing)
-                            } else {
-                                Spacer()
-                            }
-                            
+                        //HStack {
                             VStack(alignment: align == .trailing ? .trailing : .leading) {
-                                Text(new.title).font(.headline).lineLimit(1)
-                                Text(new.subtitle).font(.subheadline).foregroundColor(.secondary).lineLimit(1)
-                                Text(new.body).font(.caption).foregroundColor(.secondary).lineLimit(2)
-                            }
-                            
-                            if align == .trailing {
-                                ZStack {
-                                    color
-                                    Image(systemName: new.icon)
-                                        .foregroundColor(.white)
-                                }
-                                #if !os(tvOS)
-                                .frame(width: 50, height: 50)
-                                #else
-                                .frame(width: 100, height: 100)
-                                #endif
-                                .cornerRadius(15)
-                                .padding(.leading)
-                            } else {
-                                Spacer()
-                            }
-                        }.padding(.bottom)
+                                Text(new.title).font(.headline).lineLimit(2)
+                                Text(new.subtitle).font(.subheadline).foregroundColor(.secondary).lineLimit(2)
+                                Text(new.body).font(.callout).foregroundColor(.secondary).lineLimit(6)
+                            }.padding(.bottom).frame(width: 450)
+                        //}.padding(.bottom).frame(width: 450)
                     }
                 }
             }
             #if !os(tvOS)
-            .frame(width: 300)
+            .frame(width: 450)
             #elseif !os(macOS)
             .frame(maxHeight: UIScreen.main.bounds.height * 0.5)
             #endif
